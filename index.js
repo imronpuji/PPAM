@@ -11,7 +11,7 @@ const data = [{
 }]
 
 
-console.log((30 / 100) * ((60 + 60 + 60 + 60) / 4) )
+
 //The percent that we want to get.
 //i.e. We want to get 50% of 120.
 const absensi = (val, persen) => {
@@ -43,10 +43,10 @@ const test = data.map(({nama, tugas_1, tugas_2, tugas_3, tugas_4, absen, keaktif
   const aktifann = persen(keaktifan, 10)
 
 const angka = tugass + utss + uass + absensis + aktifann
-console.log(angka.toFixed(2) > 2)
+
 if(angka.toFixed(2) > 80 && angka.toFixed(2) <= 100){
-  console.log('A', '4,00')
-  console.log(angka.toFixed(2))
+  
+  
     return {bobot : '4.00' ,skor : angka.toFixed(2), kehadiran : absensis.toFixed(2), tugas : tugass.toFixed(2), uts : utss.toFixed(2), uas : uass.toFixed(2), keterangan : 'LULUS', huruf:'A'  }
 
 } else if(angka.toFixed(2) > 75 && angka.toFixed(2) <= 80){
@@ -69,20 +69,20 @@ if(angka.toFixed(2) > 80 && angka.toFixed(2) <= 100){
 
 
 } else if(angka.toFixed(2) > 55 && angka.toFixed(2) <= 60){
-    console.log('CD', '1,50')
-    console.log(angka.toFixed(2))
+    
+    
         return {bobot : '1.50' ,skor : angka.toFixed(2), kehadiran : absensis.toFixed(2), tugas : tugass.toFixed(2), uts : utss.toFixed(2), uas : uass.toFixed(2), keterangan : 'LULUS', huruf:'CD'  }
 
 } else if(angka.toFixed(2) > 50 && angka.toFixed(2) <= 55){
-    console.log('D', '1,00')
-    console.log(angka.toFixed(2))
+    
+    
         return {bobot : '1.00' ,skor : angka.toFixed(2), kehadiran : absensis.toFixed(2), tugas : tugass.toFixed(2), uts : utss.toFixed(2), uas : uass.toFixed(2), keterangan : 'MENGULANG', huruf:'D'  }
 
 } else if(angka.toFixed(2) > 0 && angka.toFixed(2) <= 50){
-    console.log('E', '0,00')
-    console.log(angka.toFixed(2))
+    
+    
             return {bobot : '3.50' ,skor : angka.toFixed(2), kehadiran : absensis.toFixed(2), tugas : tugass.toFixed(2), uts : utss.toFixed(2), uas : uass.toFixed(2), keterangan : 'MENGULANG', huruf:'E'  }
 
 }
 })
-console.log(test)
+
